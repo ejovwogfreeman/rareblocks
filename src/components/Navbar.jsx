@@ -5,10 +5,10 @@ import "../css/Navbar.css";
 const Navbar = () => {
   return (
     <nav className="main-nav">
-      <h5 className="m-0">
+      <h5>
         <span className="text-warning">/</span>RAREBLOCKS
       </h5>
-      <ul className="m-0 p-0">
+      <ul>
         <li>
           <Link to="/">About</Link>
         </li>
