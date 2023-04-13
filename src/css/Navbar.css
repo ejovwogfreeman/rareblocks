@@ -26,3 +26,59 @@
   padding: 5px 10px;
   border-radius: 5px;
 }
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .main-nav {
+    padding: 0px 5%;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .main-nav .desktop-links,
+  .main-nav .contact-link {
+    display: none;
+  }
+}
+
+.mobile-nav {
+  background-color: black;
+  position: fixed;
+  display: block;
+  transition: 0.5s ease-in-out;
+  width: 70%;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+}
+
+.show {
+  margin-left: 0px;
+  transition: 0.5s ease-in-out;
+}
+
+.mobile-nav ul {
+  display: block;
+  padding-top: 50px !important;
+}
+
+.mobile-nav a {
+  color: white;
+  border-bottom: 1px solid rgba(256, 256, 256, 0.3);
+  display: flex;
+  padding: 10px !important;
+}
+
+.main-nav a:hover {
+  color: white;
+  background-color: rgba(256, 256, 256, 0.1);
+}
