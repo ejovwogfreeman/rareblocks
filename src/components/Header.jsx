@@ -7,7 +7,9 @@ const Header = () => {
   return (
     <header className="main-header">
       <div>
-        <p>Welcome to our platform</p>
+        <span className="border rounded-pill p-1 px-3">
+          Welcome to our platform
+        </span>
         <h1 className="my-3">
           StBusiness Cluter- <br /> Intranet Portal Content
         </h1>
