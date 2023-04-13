@@ -47,7 +47,11 @@ const Footer = () => {
         </ul>
         <form>
           <h6 className="mb-4 text-muted">NEWSLETTER</h6>
-          <input type="text" placeholder="enter your email address" />
+          <input
+            type="text"
+            placeholder="enter your email address"
+            className="rounded"
+          />
           <button className="btn btn-primary">Subscribe Now</button>
         </form>
       </div>
