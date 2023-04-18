@@ -1,0 +1,36 @@
+.square {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+
+
+  }
+
+  .square:hover {
+    transform: scale(1.1) rotate(45deg);
+  }
+  
+  .square-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  

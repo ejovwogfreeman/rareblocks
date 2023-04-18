@@ -2,14 +2,19 @@ import React from "react";
 import "../css/Header.css";
 import { Link } from "react-router-dom";
 import CountUp from "react-countup";
+import { motion } from "framer-motion";
+
 
 const Header = () => {
   return (
     <header className="main-header">
       <div>
-        <span className="border rounded-pill p-1 px-3">
-          Welcome to our platform
-        </span>
+        <motion.span whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}
+        
+        initial={{ x: "-100vw" }} animate={{ x: 0 }} className="border rounded-pill p-1 px-3">
+        
+          Welcome to our platform omj
+        </motion.span>
         <h1 className="my-3">
           StBusiness Cluter- <br /> Intranet Portal Content
         </h1>
@@ -17,7 +22,7 @@ const Header = () => {
           Become the leading digital enabler and partner of choice for <br />{" "}
           business customers in the region
         </p>
-        <Link>Get Started</Link>
+        <Link class="gradient-btn">Get Started</Link>
         <div className="d-flex align-items-center justify-content-center">
           <span className="d-flex align-items-center">
             <h3>
@@ -43,3 +48,6 @@ const Header = () => {
 };
 
 export default Header;
+
+
+

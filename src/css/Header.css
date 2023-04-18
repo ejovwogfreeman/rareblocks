@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   padding: 100px 0px;
+  
 }
 
 .main-header div {
@@ -14,7 +15,7 @@
 }
 
 .main-header a {
-  background-color: black;
+  /* background-color: black; */
   color: white;
   border-radius: 5px;
   display: block;
@@ -34,6 +35,43 @@
   font-size: 12px;
   line-height: 15px;
 }
+
+
+.gradient-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+
+.gradient-btn::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(to bottom, black, #3498db);
+  border-radius: 30px;
+}
+
+.gradient-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.gradient-btn:hover::before {
+  filter: blur(10px);
+}
+
+
+
+
+
+
+
 
 @media screen and (max-width: 800px) {
   .main-header {
